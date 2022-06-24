@@ -11,12 +11,33 @@ a {
     transition: all .24s linear 0ms;
 }
 
+
+
+@media (min-width: 1200px) {
+    .container {
+      max-width: 1170px;
+    }
+    
+  }
+@media (min-width: 1230px) {
+    .container {
+      max-width: 1230px;
+    }
+}
+
+@media (min-width: 1430px){
+    .container {
+      max-width: 1430px;
+    }
+}
+
 header {
     background-color: #022335;
 }
 
 #announcement-bar {
-    font-size: 14px !important;
+    font-size: 13px !important;
+    border-bottom: 1px solid #1c394a;
 }
 
 #announcement-bar ul > li {
@@ -29,5 +50,116 @@ header {
 
 #announcement-bar ul > li:first-child {
     border-left: 0px !important;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-container i{
+    font-size: 20px;
+}
+
+img#logo {
+    max-width: 200px;
+}
+
+#header-link-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#header-link-container i{
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+}
+ul#header-link-container li{
+    vertical-align: bottom;
+}
+
+#header-link-container a {
+    line-height: 1;
+    color: #fff;
+    padding-left: 40px;
+}
+
+.header-link-counter {
+    font-size: 11px;
+    color: #333;
+    background: #fcbe00;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    top: -10px;
+    left: 17px;
+}
+
+@media (min-width: 480px) { 
+    #header-link-container {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    #logo-container {
+        justify-content:center;
+    }
+
+    #logo-container a{
+        margin-right: 0 !important;
+    }
+ }
+
+@media (min-width: 576px) { 
+    #header-link-container {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    #logo-container {
+        justify-content:center;
+    }
+
+    #logo-container a{
+        margin-right: 0 !important;
+    }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #logo-container {
+        justify-content: center;
+    }
+
+    #logo-container a{
+        margin-right: 0 !important;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #header-link-container {
+        margin-top: 0;
+        justify-content: end;
+    }
+
+    #logo-container {
+        justify-content: space-between;
+    }
+
+    #logo-container a{
+        margin-right: 0 !important;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
 }
 
